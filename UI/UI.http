@@ -1,6 +1,6 @@
 @UI_HostAddress = http://localhost:5117
 
-GET {{UI_HostAddress}}/weatherforecast/
+GET {{UI_HostAddress}}/api/getperson/1
 Accept: application/json
 
 ###
