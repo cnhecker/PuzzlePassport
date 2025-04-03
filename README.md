@@ -64,13 +64,12 @@ https://visualstudio.microsoft.com/free-developer-offers/
 - Close all instances of SQL Server Management Studio and then reopen it.
 - Sign back into localhost and under the object explorer go to localhost/security/logins
 - Right click on logins and click New Login
-- Choose Sql Server Authentication and make the login name BanceAppUser and the password banceappuser123
+- Choose Sql Server Authentication and make the login name PuzzlePassportUser and the password puzzlepassportuser123
 - Uncheck the "Enforce Password Expiration" box
 - Click Server Roles
 - Check public and sysadmin
 - Click User Mapping
-- Check Bance, at the top, and db owner and public, at the bottom
-- Check Bance_Test, at the top, and db owner and public, at the bottom
+- Check PuzzlePassport, at the top, and db owner and public, at the bottom
 - Click Ok
 - If you want to add records to the Person table, you can do that now, but it isn't required.
 
