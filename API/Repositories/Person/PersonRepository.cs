@@ -12,9 +12,6 @@ namespace API.Repositories.Person
         public Models.Person.Person GetPerson(int id)
         {
             var person = new Models.Person.Person();
-            person.Id = id;
-            person.FirstName = "Lance";
-            person.LastName = "Hecker";
             using (SqlConnection connection = new SqlConnection(Connection.ConnectionString))
             {
                 SqlCommand command = new SqlCommand("GetPerson", connection);
