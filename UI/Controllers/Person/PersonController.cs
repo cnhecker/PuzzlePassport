@@ -15,13 +15,15 @@ namespace UI.Controllers.Person
         }
 
         [Route("api/GetPerson/{id}")]
-        public HttpResponseMessage GetPerson(int id)
+        public API.Models.Person.Person GetPerson(int id)
         {
-            var response = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
-            var json = JsonConvert.SerializeObject(personService.GetPerson(id));
-            response.Content = new StringContent(json);
+            //var response = new HttpResponseMessage(System.Net.HttpStatusCode.OK);
+            //var json = JsonConvert.SerializeObject(personService.GetPerson(id));
+            //response.Content = new StringContent(json);
 
-            return response;
+            //return response;
+
+            return personService.GetPerson(id);
         }
     }
 }
