@@ -1,12 +1,7 @@
 ﻿using API.DataAccess;
 using API.DataAccess.Models;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace API.Repositories.Person
 {
@@ -20,23 +15,23 @@ namespace API.Repositories.Person
             person.Id = id;
             person.FirstName = "Lance";
             person.LastName = "Hecker";
-            //using (SqlConnection connection = new SqlConnection(Connection.ConnectionString))
-            //{
-            //    SqlCommand command = new SqlCommand("GetPerson", connection);
-            //    command.CommandType = System.Data.CommandType.StoredProcedure;
-            //    command.Parameters.Add("@PersonId", SqlDbType.Int).Value = id;
-            //    command.Connection.Open();
+            using (SqlConnection connection = new SqlConnection(Connection.ConnectionString))
+            {
+                SqlCommand command = new SqlCommand("GetPerson", connection);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.Add("@PersonId", SqlDbType.Int).Value = id;
+                command.Connection.Open();
 
-            //    using (EnhancedSqlDataReader reader = new EnhancedSqlDataReader(command.ExecuteReader()))
-            //    {
-            //        while (reader.Read()) 
-            //        {
-            //            person.FirstName = reader.GetStringOrNull("P_FirstName");
-            //            person.LastName = reader.GetStringOrNull("P_LastName");
-            //            person.Id = reader.GetInt32("P_Id");
-            //        }
-            //    }
-            //}
+                using (EnhancedSqlDataReader reader = new EnhancedSqlDataReader(command.ExecuteReader()))
+                {
+                    while (reader.Read())
+                    {
+                        person.FirstName = reader.GetStringOrNull("P_FirstName");
+                        person.LastName = reader.GetStringOrNull("P_LastName");
+                        person.Id = reader.GetInt32("P_Id");
+                    }
+                }
+            }
 
             return person;
         }

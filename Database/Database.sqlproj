@@ -65,11 +65,15 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Person.sql" />
+    <Build Include="dbo\Stored Procedures\GetPerson.sql" />
   </ItemGroup>
   <ItemGroup>
     <SqlCmdVariable Include="SQLCMD_ProjectDir">
       <DefaultValue>C:\GIT\PuzzlePassport\Database</DefaultValue>
       <Value>$(SqlCmdVar__1)</Value>
     </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Database.refactorlog" />
   </ItemGroup>
 </Project>
