@@ -51,9 +51,6 @@ https://visualstudio.microsoft.com/free-developer-offers/
 - Save the file
 - Double-click the Local.publish.xml file
 - Click "Load Values" then change the filepath that was loaded to match the appropriate path on your computer.
-- Click Edit... at the top of the window
-- Set Trust Server Certificate to True
-- Click Ok
 - Click Publish
 - Open the Local.publish.xml file and change the value back to False.
 - Open Sql Server Management Studio
