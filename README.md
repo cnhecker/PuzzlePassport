@@ -79,7 +79,7 @@ https://visualstudio.microsoft.com/free-developer-offers/
   - The one recommended for most users is fine
   - You don't need to download chocolatey, when it asks
 - Open Visual Studio Code and Select File/Open Folder
-- Select the react-ui folder under the BanceApp folder
+- Select the react-ui folder under the PuzzlePassport folder
 - On the left-hand side, select the 3rd item from top (labeled Source Control when you hover over it)
 - Install what it suggests to install (Github for Windows)
 - In that same area, select the item labeled extensions, when hovering over it, and install EsLint. 
@@ -89,11 +89,9 @@ https://visualstudio.microsoft.com/free-developer-offers/
 - Type npm install
 
 ## Starting the App
-- Open visual studio code and in the built-in command prompt at the bottom, type npm start. A web browser should open up automatically, displaying a page with court information (if you put any in your local db)
-
-## Running the Integration Tests
-- In Visual Studio select View/Test Explorer
-- All the tests will be listed. From here you can right click at the highest level to run all the tests or debug them or you can select individual tests and right click to run or debug.
+- Open visual studio code and in the built-in command prompt at the bottom, type npm run dev.
+- In Visual Studio click the green play button
+- Open the link displayed in the vs code command prompt 
 
 ## ERROR HANDLING
 - Proxy Connection Error - ECONNREFUSED  
