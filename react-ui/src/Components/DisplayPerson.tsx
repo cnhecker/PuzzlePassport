@@ -16,7 +16,7 @@ function DisplayPerson() {
     }
 
     fetch();
-  });
+  }, []);
 
   return (
     <>
