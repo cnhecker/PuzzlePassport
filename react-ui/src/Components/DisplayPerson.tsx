@@ -9,7 +9,7 @@ function DisplayPerson() {
   useEffect(() => {
     async function fetch() {
       try {
-        setPerson(await fetchPerson(2));
+        setPerson(await fetchPerson(1));
       } catch {
         message.error("Something went wrong fetching the person");
       }
@@ -20,8 +20,8 @@ function DisplayPerson() {
 
   return (
     <>
-      <div>{person?.firstname}</div>
-      <div>{person?.lastname}</div>
+      <div>{person?.firstName}</div>
+      <div>{person?.lastName}</div>
       <div>{person?.id}</div>
     </>
   );
