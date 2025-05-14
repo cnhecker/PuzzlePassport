@@ -31,7 +31,7 @@ https://visualstudio.microsoft.com/free-developer-offers/
 - Click Install
 - In the setup where you pick your color scheme and other settings, choose C#
 - Choose clone a repository
-- Paste in this URL: https://github.com/martymcfly1985/BanceApp.git
+- Paste in this URL: https://github.com/martymcfly1985/PuzzlePassport.git
 - Make the path C:\GIT
 
 - Inside Visual Studio, at the top, select Extensions/Manage Extensions and add CodeMaid and Specflow for Visual Studio 2022
