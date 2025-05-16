@@ -1,5 +1,5 @@
 # PuzzlePassport
-An app for Lance and Ben to practice code
+An app for Lance, Ben, and Chelsey to practice code
 
 # Development Workflow
 - Create and/or assign yourself to a JIRA and put it in progress. 
