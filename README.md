@@ -54,7 +54,7 @@ https://visualstudio.microsoft.com/free-developer-offers/
 - Open the Local.publish.xml file and change the value back to False.
 - Open Sql Server Management Studio
 - Type localhost as the server name then click Connect
-- From the object explorer on the left, expand localhost/databases/Bance/Tables
+- From the object explorer on the left, expand localhost/databases/PuzzlePassport/Tables
 - There should be a table there called Person (I made that table) indicating the publish worked.
 - Right click on localhost and go to properties/security
 - Under Server authentication choose SQL Server and Windows Authentication Mode
