@@ -21,4 +21,18 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="P_LastName" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="12fe36bd-bf13-4249-8a17-966fb26027ee" ChangeDateTime="06/17/2025 00:54:48">
+    <Property Name="ElementName" Value="[dbo].[UserVisitedEscapeRoom].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[UserVisitedEscapeRoom]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PersonId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="134395c8-8038-46f0-9835-24c84cb145e0" ChangeDateTime="06/17/2025 01:09:29">
+    <Property Name="ElementName" Value="[dbo].[EscapeRoom].[ER_Statw]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[EscapeRoom]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ER_State" />
+  </Operation>
 </Operations>

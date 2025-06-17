@@ -26,6 +26,10 @@ namespace API.Repositories.Person
                         person.FirstName = reader.GetStringOrNull("P_FirstName");
                         person.LastName = reader.GetStringOrNull("P_LastName");
                         person.Id = reader.GetInt32("P_Id");
+                        person.DateOfBirth = reader.GetDateTime("P_DateOfBirth");
+                        person.Password = reader.GetString("P_Password");
+                        person.Username = reader.GetString("P_Username");
+                        person.EmailAddress = reader.GetString("P_EmailAddress");
                     }
                 }
             }

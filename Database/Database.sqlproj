@@ -67,6 +67,8 @@
   <ItemGroup>
     <Build Include="dbo\Tables\Person.sql" />
     <Build Include="dbo\Stored Procedures\GetPerson.sql" />
+    <Build Include="dbo\Tables\EscapeRoom.sql" />
+    <Build Include="dbo\Tables\UserVisitedEscapeRoom.sql" />
   </ItemGroup>
   <ItemGroup>
     <SqlCmdVariable Include="SQLCMD_ProjectDir">
