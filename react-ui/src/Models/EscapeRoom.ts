@@ -6,3 +6,9 @@ export interface EscapeRoom {
   state: string;
   zipCode: string;
 }
+
+export interface VisitedEscapeRoom {
+  id: number;
+  name: string;
+  dateVisited: Date;
+}
