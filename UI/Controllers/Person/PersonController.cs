@@ -1,4 +1,5 @@
-﻿using API.Services.Person;
+﻿using API.Models.EscapeRoom;
+using API.Services.Person;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -24,6 +25,12 @@ namespace UI.Controllers.Person
             //return response;
             // test commit
             return personService.GetPerson(id);
+        }
+
+        [Route("api/getvisitedescaperooms/{personId}")]
+        public List<VisitedEscapeRoom> GetVisitedEscapeRooms(int personId)
+        {
+            return personService.GetVisitedEscapeRooms(personId);
         }
     }
 }
