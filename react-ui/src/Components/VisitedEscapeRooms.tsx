@@ -28,7 +28,7 @@ function VisitedEscapeRooms() {
     useEffect(() => {
         async function fetch() {
             try {
-                setVisitedEscapeRooms(await fetchVisitedEscapeRooms(1));
+                setVisitedEscapeRooms(await fetchVisitedEscapeRooms(4));
             } catch {
                 message.error("Something went wrong fetching the escape rooms");
             }
@@ -43,7 +43,7 @@ function VisitedEscapeRooms() {
                 {
                     key: index,
                     label: visitedEscapeRoom.name,
-                    children: (<div>{visitedEscapeRoom.dateVisited.toDateString()} </div>)
+                    children: (<div>{new Date(visitedEscapeRoom.dateVisited).toDateString()} </div>)
                 }
             )
         })

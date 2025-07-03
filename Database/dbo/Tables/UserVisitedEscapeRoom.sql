@@ -3,6 +3,7 @@
 	[PersonId] INT NOT NULL, 
     [EscapeRoomId] INT NOT NULL
 	
-	PRIMARY KEY(PersonId, EscapeRoomId)
+	PRIMARY KEY(PersonId, EscapeRoomId), 
+    [DateVisited] DATETIME NULL
 )
 
