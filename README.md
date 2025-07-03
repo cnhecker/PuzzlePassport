@@ -1,9 +1,9 @@
 # PuzzlePassport
-An app for Lance and Ben to practice code
+An app for Lance, Ben, and Chelsey to practice code
 
 # Development Workflow
 - Create and/or assign yourself to a JIRA and put it in progress. 
-- Create a new branch named after the JIRA, all lowercase. For example, ban-1
+- Create a new branch named after the JIRA, all lowercase. For example, puz-1
 - Once work is complete on the branch, make a pull request and assign the other engineers for review. 
 - Once you have at least one approval (but preferably all approvals) merge the pull request and delete the branch. 
 
@@ -14,7 +14,6 @@ An app for Lance and Ben to practice code
 - The repository classes are what talk to the database. It'll call the stored procedures and pass any required parameters. It'll also pass the results (if there are any) back to the service. 
 - Any SQL scripts/statements should be put into stored procedures. If we run into a case where this isn't feasible, the code building the script belongs in the repo. 
 - Most, if not all, tables should have some sort of auto-incrementing recnum or id (whatever we want to call it) so that it can be used to easily link tables together. 
-- The interfaces created alongside the services and repos only need the public functions.
 - Functions and variables should be named as descriptively as possible. The idea is that the code will be descriptive and readable enough that we don't need comments describing what's going on because the code will describe itself. 
 - Functions should be small and if you feel like they're getting big, see if you can pull any of the code out into another function. 
 - Functions should only do one thing, if at all possible, and shouldn't do more than the name of the function suggests. 
@@ -34,7 +33,7 @@ https://visualstudio.microsoft.com/free-developer-offers/
 - Paste in this URL: https://github.com/martymcfly1985/PuzzlePassport.git
 - Make the path C:\GIT
 
-- Inside Visual Studio, at the top, select Extensions/Manage Extensions and add CodeMaid and Specflow for Visual Studio 2022
+- Inside Visual Studio, at the top, select Extensions/Manage Extensions and add CodeMaid
 - Close Visual Studio
 - Right Click on Visual Studio and Select Properties/Shortcut/Advanced then check Run as Administrator and Apply the changes
 - Open Visual Studio
@@ -55,7 +54,7 @@ https://visualstudio.microsoft.com/free-developer-offers/
 - Open the Local.publish.xml file and change the value back to False.
 - Open Sql Server Management Studio
 - Type localhost as the server name then click Connect
-- From the object explorer on the left, expand localhost/databases/Bance/Tables
+- From the object explorer on the left, expand localhost/databases/PuzzlePassport/Tables
 - There should be a table there called Person (I made that table) indicating the publish worked.
 - Right click on localhost and go to properties/security
 - Under Server authentication choose SQL Server and Windows Authentication Mode

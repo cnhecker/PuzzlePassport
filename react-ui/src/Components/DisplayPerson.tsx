@@ -5,7 +5,6 @@ import { message } from "antd";
 
 function DisplayPerson() {
   const [person, setPerson] = useState<Person>();
-
   useEffect(() => {
     async function fetch() {
       try {
