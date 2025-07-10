@@ -10,5 +10,5 @@ export interface EscapeRoom {
 export interface VisitedEscapeRoom {
   id: number;
   name: string;
-  dateVisited: Date;
+  dateVisited: Date | null;
 }
