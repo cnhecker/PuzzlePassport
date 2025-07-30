@@ -10,6 +10,12 @@ export default defineConfig({
         target: 'http://localhost:5117',
         changeOrigin: true
       }
-    }
+    },
+    cors:true
+    // cors:{
+    //   origin:"*",
+    //   allowedHeaders:['Content-Type', 'Authorization']
+    //}
+    
   }
 })
